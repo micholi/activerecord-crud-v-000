@@ -1,4 +1,5 @@
 class CreateMovies < ActiveRecord::Migration
+  
   def change
     add_column :movies, :title, :string
     add_column :movies, :release_date, :datetime
@@ -6,4 +7,5 @@ class CreateMovies < ActiveRecord::Migration
     add_column :movies, :lead, :string
     add_column :movies, :in_theaters, :boolean
   end
+  
 end
